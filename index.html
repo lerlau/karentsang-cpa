@@ -34,6 +34,14 @@
                 color: inherit;
                 white-space: nowrap;
             }
+            /* TEAM spacing: space under photos and between columns */
+            #team .feature .testimonial__image {
+                margin-bottom: 16px;
+            }
+            #team .team-row {
+                justify-content: center;
+                gap: 40px; /* space between the two columns */
+            }
         </style>
     </head>
     <body class=" ">
@@ -85,8 +93,10 @@
                                 <button id="lang-toggle" class="btn btn--sm type--uppercase" onclick="toggleLanguage()" style="margin-right:8px;">
                                     <span class="btn__text">中文</span>
                                 </button>
-                                <a class="btn btn--sm btn--primary type--uppercase" href="#contact">
-                                    <span class="btn__text" data-en="Book a Consultation" data-zh="預約諮詢">Book a Consultation</span>
+                                <a href="https://wa.link/7utc5y" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn--sm btn--primary type--uppercase"
+                                    style="background-color:#25D366; border-color:#25D366;">
+                                    <span class="btn__text" data-en="💬 WhatsApp Us" data-zh="💬 WhatsApp 查詢">💬 WhatsApp Us</span>
                                 </a>
                             </div>
                         </div>
@@ -107,8 +117,10 @@
                                 <p class="lead" data-en="Karen Tsang &amp; Co., CPA delivers trusted accounting, tax, and business advisory services — helping individuals and businesses make confident financial decisions." data-zh="曾慧儀會計師事務所提供值得信賴的會計、稅務及商業顧問服務，協助個人及企業做出正確的財務決策。">
                                     Karen Tsang &amp; Co., CPA delivers trusted accounting, tax, and business advisory services — helping individuals and businesses make confident financial decisions.
                                 </p>
-                                <a class="btn btn--primary type--uppercase" href="#contact">
-                                    <span class="btn__text" data-en="Book a Free Consultation" data-zh="預約免費諮詢">Book a Free Consultation</span>
+                                <a href="https://wa.link/7utc5y" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn--primary type--uppercase"
+                                    style="background-color:#25D366; border-color:#25D366;">
+                                    <span class="btn__text" data-en="💬 WhatsApp Us" data-zh="💬 WhatsApp 查詢">💬 WhatsApp Us</span>
                                 </a>
                                 <span class="block type--fine-print">
                                     <span data-en="or" data-zh="或">or</span>
@@ -301,7 +313,7 @@
                 </div>
             </section>
 
-            <!-- TEAM -->
+            <!-- TEAM (updated two-column layout with spacing) -->
             <section id="team" class="text-center">
                 <div class="container">
                     <div class="row justify-content-center">
@@ -312,16 +324,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="row justify-content-center">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="feature text-center">
-                                <img class="testimonial__image" alt="Karen Tsang" src="WhatsApp Image 2026-03-23 at 8.24.13 PM.jpeg" />
-                                <h5 data-en="Karen Tsang, CPA, CA" data-zh="曾慧儀，CPA，CA">Karen Tsang, CPA, CA</h5>
-                                <span class="type--fine-print" data-en="Founder &amp; Managing Partner" data-zh="創始人及管理合夥人">Founder &amp; Managing Partner</span>
-                                <p class="small" data-en="Over 25 years of experience in tax planning, audit, and business advisory for owner-managed businesses." data-zh="擁有逾25年稅務規劃、審計及業主管理企業顧問經驗。">Over 25 years of experience in tax planning, audit, and business advisory for owner-managed businesses.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
+                    <div class="row team-row">
+                        <div class="col-md-4 col-sm-6">
                             <div class="feature text-center">
                                 <img class="testimonial__image" alt="Michael Chen" src="img/avatar-round-4.png" />
                                 <h5 data-en="Michael Chen, CPA, CGA" data-zh="陳志明，CPA，CGA">Michael Chen, CPA, CGA</h5>
@@ -329,7 +333,7 @@
                                 <p class="small" data-en="Specializes in corporate tax restructuring and cross-border transactions for mid-market companies." data-zh="專精於中型企業的企業稅務重組及跨境交易。">Specializes in corporate tax restructuring and cross-border transactions for mid-market companies.</p>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-md-4 col-sm-6">
                             <div class="feature text-center">
                                 <img class="testimonial__image" alt="Sarah Liu" src="img/avatar-round-3.png" />
                                 <h5 data-en="Sarah Liu, CPA, CMA" data-zh="廖詩雅，CPA，CMA">Sarah Liu, CPA, CMA</h5>
@@ -404,8 +408,10 @@
                         <div class="col-md-8 col-lg-6">
                             <div class="cta">
                                 <h2 data-en="Ready to take control of your finances?" data-zh="準備好掌握您的財務了嗎？">Ready to take control of your finances?</h2>
-                                <a class="btn btn--primary type--uppercase" href="#contact">
-                                    <span class="btn__text" data-en="Book a Free Consultation" data-zh="預約免費諮詢">Book a Free Consultation</span>
+                                <a href="https://wa.link/7utc5y" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn--primary type--uppercase"
+                                    style="background-color:#25D366; border-color:#25D366;">
+                                    <span class="btn__text" data-en="💬 WhatsApp Us" data-zh="💬 WhatsApp 查詢">💬 WhatsApp Us</span>
                                 </a>
                                 <p class="type--fine-print">
                                     <span data-en="No commitment required —" data-zh="無需承諾 —">No commitment required —</span>
@@ -417,58 +423,18 @@
                 </div>
             </section>
 
-            <!-- CONTACT -->
+            <!-- CONTACT (office + map) -->
             <section id="contact" class="bg--secondary">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-md-10 col-lg-8 text-center">
-                            <h2 data-en="Get in touch" data-zh="聯絡我們">Get in touch</h2>
-                            <p class="lead" data-en="Have a question or ready to get started? Fill in the form below and a member of our team will be in touch within one business day." data-zh="有任何疑問或準備好開始了嗎？請填寫以下表格，我們的團隊成員將在一個工作天內與您聯繫。">
-                                Have a question or ready to get started? Fill in the form below and a member of our team will be in touch within one business day.
+                            <h2 data-en="Visit our office" data-zh="歡迎蒞臨本事務所">Visit our office</h2>
+                            <p class="lead" data-en="Find our office details and location on the map below." data-zh="以下為本事務所地址、聯絡資料及地圖位置。" style="margin-bottom:24px;">
+                                Find our office details and location on the map below.
                             </p>
                         </div>
                     </div>
                     <div class="row justify-content-center">
-                        <div class="col-md-8 col-lg-6">
-                            <div class="boxed boxed--border bg--white">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <input type="text" data-en-placeholder="First Name" data-zh-placeholder="名字" placeholder="First Name" />
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input type="text" data-en-placeholder="Last Name" data-zh-placeholder="姓氏" placeholder="Last Name" />
-                                    </div>
-                                </div>
-                                <input type="email" data-en-placeholder="Email Address" data-zh-placeholder="電郵地址" placeholder="Email Address" />
-                                <input type="tel" data-en-placeholder="Phone Number (optional)" data-zh-placeholder="電話號碼（選填）" placeholder="Phone Number (optional)" />
-                                <select>
-                                    <option value="" disabled selected data-en="I'm interested in..." data-zh="我有興趣了解...">I'm interested in...</option>
-                                    <option data-en="Tax Planning &amp; Preparation" data-zh="稅務規劃與申報">Tax Planning &amp; Preparation</option>
-                                    <option data-en="Audit &amp; Assurance" data-zh="審計與鑒證">Audit &amp; Assurance</option>
-                                    <option data-en="Business Advisory" data-zh="商業顧問服務">Business Advisory</option>
-                                    <option data-en="Bookkeeping &amp; Payroll" data-zh="簿記與薪酬管理">Bookkeeping &amp; Payroll</option>
-                                    <option data-en="Estate &amp; Trust Planning" data-zh="遺產與信託規劃">Estate &amp; Trust Planning</option>
-                                    <option data-en="Other" data-zh="其他">Other</option>
-                                </select>
-                                <textarea rows="4" data-en-placeholder="Tell us a little about your needs..." data-zh-placeholder="請簡述您的需求..." placeholder="Tell us a little about your needs..."></textarea>
-                                <button class="btn btn--primary type--uppercase" type="submit">
-                                    <span class="btn__text" data-en="Send Message" data-zh="發送訊息">Send Message</span>
-                                </button>
-                            </div>
-
-                            <!-- WhatsApp button below the form -->
-                            <div class="text-center" style="margin-top:16px;">
-                                <p class="type--fine-print" data-en="Prefer to chat? Reach us directly on WhatsApp." data-zh="想直接聯絡？歡迎透過 WhatsApp 向我們查詢。">
-                                    Prefer to chat? Reach us directly on WhatsApp.
-                                </p>
-                                <a href="https://wa.link/7utc5y" target="_blank" rel="noopener noreferrer"
-                                   class="btn btn--primary type--uppercase"
-                                   style="background-color:#25D366; border-color:#25D366;">
-                                    <span class="btn__text" data-en="💬 WhatsApp Us" data-zh="💬 WhatsApp 查詢">💬 WhatsApp Us</span>
-                                </a>
-                            </div>
-
-                        </div>
                         <div class="col-md-4 col-lg-3">
                             <div class="boxed boxed--border bg--white">
                                 <h5 data-en="Our Office" data-zh="辦公室地址">Our Office</h5>
@@ -489,6 +455,21 @@
                                     <a href="mailto:info@karentstangcpa.com">info@karentstangcpa.com</a><br/>
                                     <a href="https://wa.link/7utc5y" target="_blank" rel="noopener noreferrer" data-en="💬 WhatsApp" data-zh="💬 WhatsApp 查詢">💬 WhatsApp</a>
                                 </p>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-lg-6">
+                            <div class="boxed boxed--border bg--white">
+                                <h5 data-en="Find us on the map" data-zh="地圖位置">Find us on the map</h5>
+                                <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:4px;">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.7086986629475!2d-123.12073522363037!3d49.28798017139308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548671814f6f9e81%3A0x6e41e1a25d5cbd0!2s888%20W%20Hastings%20St%2C%20Vancouver%2C%20BC%20V6C%203X5%2C%20Canada!5e0!3m2!1sen!2sca!4v1700000000000!5m2!1sen!2sca"
+                                        width="600"
+                                        height="450"
+                                        style="border:0; position:absolute; top:0; left:0; width:100%; height:100%;"
+                                        allowfullscreen=""
+                                        loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -529,7 +510,6 @@
             </footer>
 
         </div>
-        <!--end main-container-->
 
         <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
             <i class="stack-interface stack-up-open-big"></i>
@@ -559,29 +539,24 @@
                 currentLang = currentLang === 'en' ? 'zh' : 'en';
                 var toggleBtn = document.getElementById('lang-toggle');
 
-                // Flip the button label
                 toggleBtn.querySelector('.btn__text').textContent = currentLang === 'en' ? '中文' : 'EN';
 
-                // Update all elements that carry data-en / data-zh text content
                 document.querySelectorAll('[data-en]').forEach(function(el) {
                     if (el.id === 'lang-toggle') return;
                     var val = el.getAttribute('data-' + currentLang);
                     if (val !== null) el.innerHTML = val;
                 });
 
-                // Update input / textarea placeholders
                 document.querySelectorAll('[data-en-placeholder]').forEach(function(el) {
                     var val = el.getAttribute('data-' + currentLang + '-placeholder');
                     if (val !== null) el.setAttribute('placeholder', val);
                 });
 
-                // Update <select> option text
                 document.querySelectorAll('select option[data-en]').forEach(function(opt) {
                     var val = opt.getAttribute('data-' + currentLang);
                     if (val !== null) opt.textContent = val;
                 });
 
-                // Update the html lang attribute for accessibility
                 document.documentElement.setAttribute('lang', currentLang === 'zh' ? 'zh-Hant' : 'en');
             }
         </script>
